@@ -4,7 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to run the project
 
-Go to the project directory and run:
+Clone this repo:
+
+```bash
+git clone git@github.com:adrespi-dev/deel-autocomplete.git
+cd deel-autocomplete
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the application:
 
 ```bash
 npm start

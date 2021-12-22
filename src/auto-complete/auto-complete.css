@@ -1,0 +1,105 @@
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #cbd6e2;
+  padding: 12px 8px;
+  padding-left: 40px;
+  transition: border-color, box-shadow 0.2s ease-in;
+}
+
+.autocomplete-input:focus {
+  border-color: rgb(1 170 188 / 50%);
+  box-shadow: 0 0 4px 1px rgb(0 208 228 / 30%), 0 0 0 1px #00d0e4;
+  outline: 0;
+}
+
+.autocomplete-status--error .autocomplete-input {
+  border-color: #f2545b;
+  box-shadow: 0 0 0 1px #f2545b;
+}
+
+.autocomplete-icon {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  pointer-events: none;
+}
+
+.autocomplete-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #33475b;
+}
+
+.autocomplete-icon .loading {
+  animation: 0.9s spin infinite linear;
+}
+
+.autocomplete-icon .error {
+  fill: #f2545b;
+}
+
+.autocomplete-popup {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #cbd6e2;
+  padding: 0px;
+  margin-top: 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px 24px rgb(45 62 80 / 12%);
+  transition: transform 0.1s ease-in, opacity 0.2s ease-in;
+  z-index: 999;
+}
+
+.autocomplete-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  max-height: 450px;
+}
+
+.popup-show {
+  visibility: show;
+  opacity: 1;
+}
+
+.popup--hide {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.autocomplete-menu-item {
+  cursor: pointer;
+  padding: 12px 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.autocomplete-menu-item .highlight {
+  color: #0091ae;
+  font-weight: 500;
+}
+
+.autocomplete-menu-item:hover {
+  background-color: #e5f5f8;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

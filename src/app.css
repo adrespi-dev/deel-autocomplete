@@ -1,0 +1,39 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 4rem;
+  background-color: #f5f8fa;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 640px;
+  padding: 24px;
+  background: white;
+  box-shadow: rgb(45 62 80 / 12%) 0px 1px 5px 0px;
+  border-radius: 3px;
+}
+
+.example-block + .example-block {
+  margin-top: 60px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.selected-text {
+  margin-top: 12px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.selected-text strong {
+  color: #0091ae;
+  font-weight: 600;
+}
